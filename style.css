@@ -1,0 +1,141 @@
+/*========= 共通設定 ===============*/
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+main {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+/*========= header ===============*/
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 6rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+
+.pc-logo {
+    display: flex;
+    text-align: center;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.pc-logo img {
+    width: 120px;
+    height: 74px;
+    padding-bottom: 1rem;
+}
+
+.pc-logo a:hover {
+    line-height: 1.2rem;
+    color: #ffefcc;
+    font-family: Kiwi Maru;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+}
+
+.list a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #594A4E;
+    font-family: Kiwi Maru;
+}
+
+.list a:hover {
+    color: #EC6015;
+}
+
+/*========= page ===============*/
+.register-section {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.register-section h2 {
+    font-family: Kiwi Maru;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #594A4E;
+    font-weight: bold;
+}
+
+.register-section-details {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.register-section-details_flex {
+    display: flex;
+    justify-content: center;
+    gap: 0 1rem;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.register-section-details_flex div:first-child {
+    color: #594A4E;
+    font-family: Kiwi Maru;
+    width: 6rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+/*========= input ===============*/
+input[type="text"] {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 0 1px #ccc inset;
+    font-size: 1rem;
+    color: #594A4E;
+    font-family: Kiwi Maru;
+    width: 250px;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #71c7c8 inset;
+}
+
+/*========= 按钮样式 ===============*/
+.register {
+    background-color: #f59e0b;
+    color: #fff;
+    border: gray;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 0 #aaaaaa;
+    transition: 0.3s;
+}
+
+.back-btn {
+    background-color: #71c7c8;
+    color: #fff;
+    border: gray;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 0 #aaaaaa;
+    transition: 0.3s;
+}
+
+/*========= footer ===============*/
+footer {
+    background-color: #EC6015;
+    padding: 1rem 0;
+}
+
+footer div {
+    text-align: center;
+    color: #fff;
+}

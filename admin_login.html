@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href=""><img src="/pic/blog.png" alt=""></a>
+            </div>
+            <div class="nav-right">
+                <div><a href=""><img src="#" alt=""></a></div>
+                <div><a href=""><img src="#" alt=""></a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Admin管理システム</h2>
+            <form action="/login/process" method="post">
+                <table>
+                    <tr>
+                        <th>email</th>
+                        <td><input type="text" name="adminEmail"></td>
+                    </tr>
+                    <tr>
+                        <th>password</th>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                </table>
+                <div class="submit-button">
+                    <button id="login" class="active_btn">ログイン</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

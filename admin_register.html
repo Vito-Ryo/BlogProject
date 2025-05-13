@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="inner">
+                <div class="pc-logo">
+                    <a href=""><img src="./images/logo.png" alt=""></a>
+                </div>
+                <ul class="list">
+                    <li class="list__item"><a href="">ログイン</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner">
+            <section class="register-section">
+                <h2>アカウント登録</h2>
+                <form action="/register/process" method="post">
+                    <div class="register-section-details">
+                        <div class="register-section-details_flex">
+                            <div>名前</div>
+                            <input type="text" name="adminName" value="" id="adminName">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>メールアドレス</div>
+                            <input type="text" name="adminEmail" value="">
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>パスワード</div>
+                            <input type="text" name="password" value="">
+                        </div>
+                    </div>
+                    <div class="register-section-details_flex">
+                        <button class="register">登録</button>
+                        <button class="back-btn" onclick="history.back();" type="button">戻る</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <small>&copy; 2025 LIANG CHAOHONG</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
