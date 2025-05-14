@@ -52,11 +52,12 @@
                         <button class="register">更新</button>
                         <button class="back-btn" onclick="history.back();" type="button">戻る</button>
                     </div>
-                    <form th:action="@{/blog/delete}" method="post"></form>
-                    <div class="register-section-details_flex">
-                        <input type="hidden" name="blogId" value="">
-                        <button class="register">削除</button>
-                    </div>
+                    <form th:action="@{/blog/delete}" method="post">
+                        <div class="register-section-details_flex">
+                            <input type="hidden" name="blogId" value="">
+                            <button class="register">削除</button>
+                        </div>
+                    </form>
                 </form>
 
             </section>
