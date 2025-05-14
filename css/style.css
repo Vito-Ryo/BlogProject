@@ -1,0 +1,171 @@
+/* --- 全体の基本設定 --- */
+body {
+    margin: 0;
+    /* ページ全体の外側の余白をゼロに */
+    padding: 0;
+    /* ページ全体の内側の余白もゼロに */
+    font-family: 'Kiwi Maru';
+    /* 全体のフォント日本語をKiwi Maruに設定 */
+    font-family: "Playpen Sans Deva";
+    /* 全体のフォント英語をPlaypen Sans Devaに設定 */
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    /* 背景画像を中央に固定表示。繰り返しなし */
+    background-size: cover;
+    /* 画面いっぱいに背景画像を拡大表示（縦横比を保つ） */
+    height: 100vh;
+    /* 表示エリアを画面全体の高さにする */
+    display: flex;
+    /* Flexboxレイアウトを使用 */
+    justify-content: center;
+    /* 水平方向の中央揃え */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+}
+
+/* ===== ナビ===== */
+.nav-header {
+    position: fixed;
+    /* 常に画面の上部に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 横幅100% */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* 半透明の背景*/
+    z-index: 1000;
+    /* 他の要素より前に表示 */
+    padding: 1rem 2rem;
+    height: 60px;
+    /* 高さを設定*/
+    box-sizing: border-box;
+}
+
+/* ===== ナビリスト ===== */
+.nav-list {
+    display: flex;
+    /* 横並び */
+    justify-content: flex-end;
+    /* 右寄せ */
+    gap: 2rem;
+    /* 項目間のスペース */
+    list-style: none;
+    /* ●を削除 */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== リンク ===== */
+.nav-list a {
+    color: white;
+    /* 白文字 */
+    text-decoration: none;
+    /* 下線なし */
+    font-weight: bold;
+    /* 太字 */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #EC6015;
+}
+
+/* 中央フォーム全体 */
+form {
+    background-color: #f5f5f5;
+    /* 背景色 */
+    padding: 40px 50px;
+    /* 上下40px、左右50pxの内側余白 */
+    border-radius: 8px;
+    /* 角を丸くする */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* 幅は最大100%まで */
+    max-width: 400px;
+    /* 最大幅制限 */
+    box-sizing: border-box;
+    /* paddingを含めて幅を計算する */
+}
+
+/* --- フォームの見出し（h2） --- */
+form h2 {
+    text-align: center;
+    /* テキストを中央に配置 */
+    margin-bottom: 30px;
+    /* 見出しの下の余白を設ける */
+    color: #333;
+    /* 文字色 */
+    font-size: 1.5rem;
+    /* 見出しの文字サイズを大きめに */
+}
+
+/* テキスト入力欄 */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    /* 幅をフォームいっぱいに広げる */
+    padding: 10px 5px;
+    /* 上下左右の余白 */
+    border: none;
+    /* 枠線を消す */
+    border-bottom: 2px solid #ccc;
+    /* 下線だけグレーで表示 */
+    background: transparent;
+    /* 背景を透明にして背景画像と馴染ませる */
+    margin-bottom: 25px;
+    /* 下に余白を空ける */
+    font-size: 1rem;
+    /* 文字サイズは標準的に */
+    outline: none;
+    /* フォーカス時の枠線（青い線）を消す */
+    transition: border-color 0.3s;
+    /* 下線色の変化にアニメーションを付ける */
+}
+
+/* --- フォーカス時の入力欄のスタイル（クリックされた時） --- */
+input:focus {
+    border-bottom: 2px solid #EC6015;
+    /* 下線色をオレンジに変える */
+}
+
+/* --- ボタンの共通 --- */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+/* --- ボタンにマウスを乗せた時の反応 --- */
+button:hover {
+    background-color: #aaa;
+}
+
+/* 戻るボタン用 */
+.back-btn {
+    background-color: #ccc;
+}
+
+.back-btn:hover {
+    background-color: #999;
+    /* ホバー時はさらに濃いグレーにする */
+}
+
+/* --- フッター --- */
+footer {
+    text-align: center;
+    /* 中央揃え */
+    margin-top: 20px;
+    /* 上にスペースを設ける */
+    color: #333;
+    /* 文字色*/
+    font-size: 0.9rem;
+    /* 少し小さめの文字サイズ */
+}
