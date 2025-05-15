@@ -1,0 +1,52 @@
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* フォームの背景色を白にしつつ、90%の不透明度で背景画像を少し透けさせる */
+    padding: 5vh 5vw;
+    /* 上下に5vh、左右に5vwの内側余白。 */
+    width: 90vw;
+    /* 横幅を画面の90%に設定*/
+    max-width: 1000px;
+    /* 画面が大きすぎる場合、最大で1000pxまでに制限*/
+    min-height: 80vh;
+    /* フォームの縦の最小高さを画面の80%に設定。*/
+    box-sizing: border-box;
+    /* デザイン崩れ防止の設定 */
+    display: flex;
+    flex-direction: column;
+    /* 子要素を縦方向に並べる*/
+    justify-content: center;
+    /* 水平方向の中央揃え */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+}
+
+body {
+    background: url("../images/blogre.jpg") no-repeat center center fixed;
+    /* 背景画像を中央に固定表示。繰り返しなし */
+    background-size: cover;
+    /* 画面いっぱいに背景画像を拡大表示（縦横比を保つ） */
+}
+
+/* --- テキスト入力欄--- */
+input[type="text"],
+textarea {
+    width: 600px;           /* 横幅固定 */
+    height: 70px;           /* 高さを固定 */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;         /* テキストエリアのサイズ変更（ドラッグ）を無効にする */
+    background-color: #fff;
+}
+
+/* テキストエリア（内容）の高さだけ別に設定したい場合 */
+textarea {
+    height: 100px;          /* ✅ 内容部分だけ高さを大きく設定 */
+}
+
+/* フッター */
+footer{
+    color: #fff;
+}

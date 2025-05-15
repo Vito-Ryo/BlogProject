@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ編集</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="nav-header">
+        <nav>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="">ブログ一覧</a></li>
+                    <li><a href="">ログアウト</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-inner">
+            <section class="register-section">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <h2>ブログ編集画面</h2>
+                    <div class="register-section-details">
+                        <div class="register-section-details_flex a">
+                            <div>タイトル</div>
+                            <input type="text" name="titleName" value="" id="adminName">
+                        </div>
+                        <div class="register-section-details_flex b">
+                            <div>内容</div>
+                            <textarea name="content" placeholder="内容"></textarea>
+                        </div>
+                        <div class="register-section-details_flex">
+                            <div>写真</div>
+                            <input type="file" name="blogImage">
+                        </div>
+                    </div>
+
+                    <div class="register-section-details_flex">
+                        <input type="hidden" name="blogId" value="">
+                        <button class="register">更新</button>
+                        <button class="back-btn" onclick="history.back();" type="button">戻る</button>
+                    </div>
+                    <form th:action="@{/blog/delete}" method="post"></form>
+                    <div class="register-section-details_flex">
+                        <input type="hidden" name="blogId" value="">
+                        <button class="register">削除</button>
+                    </div>
+                </form>
+
+            </section>
+        </div>
+        <footer>
+            <small>&copy; 2025 LIANG CHAOHONG</small>
+        </footer>
+    </main>
+</body>
+
+</html>
