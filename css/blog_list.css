@@ -32,9 +32,11 @@ body {
 
 .btn--gray, a.btn--gray {
     color: #fff;
-    background-color: gray;
+    background-color: rgba(117, 109, 105, 0.7);
+    /* background-color: gray; */
     padding: 0.5rem 1rem;
-    box-shadow: 0 5px 0 #aaaaaa;
+    text-decoration: none;
+    border: none;
     transition: 0.3s;
     font-family: Kiwi Maru;
 }
@@ -42,15 +44,13 @@ body {
 /* ===== ボタンにマウスを乗せた時のスタイル ===== */
 .btn--gray:hover,
 a.btn--gray:hover {
-    background-color: #ffefcc;
+    background-color: #5f5a4e;
     /* ホバー時に明るいオレンジに変更 */
     color: black;
     transform: translateY(3px);
     /* ボタンを少し下に動かす */
     text-decoration: none;
     /* アンダーラインを消す */
-    box-shadow: 0 2px 0 #aaaaaa;
-    /* 影を弱めてクリック感を出す */
 }
 
 a.btn--radius {
@@ -156,7 +156,7 @@ a.btn--radius {
 
 .nav-search form input[type="text"] {
     all: unset;
-    /* ✅ 継承を完全にリセット */
+    /* 継承を完全にリセット */
     flex-grow: 1;
     padding: 0.4rem 0.8rem;
     border-radius: 30px;
@@ -168,7 +168,7 @@ a.btn--radius {
 
 .nav-search form button {
     all: unset;
-    /* ✅ 継承リセット */
+    /* 継承リセット */
     background-color: #EC6015;
     color: white;
     border-radius: 30px;
