@@ -147,18 +147,18 @@ button {
 .register {
     display: block;
     width: 200px;
-    margin: 10px auto;
+    margin: 10px ;
 }
 
 /* 削除ボタンためにボタン間の余白を手動で設定 */
-.register-section-details_flex button {
+.register-section-details_flex button { 
     display: block;
     margin: 10px auto 0 auto;
-}
+} 
 
 /* --- ボタンにマウスを乗せた時の反応 --- */
 button:hover {
-    background-color: #aaa;
+    background-color:  #aaa;
 }
 
 /* 戻るボタン用 */

@@ -20,52 +20,48 @@
         <nav>
             <div>
                 <ul class="nav-list">
-                    <li><a href="">ブログ一覧</a></li>
-                    <li><a href="">ログアウト</a></li>
+                    <li><a th:href="@{/blog/list}">ブログ一覧</a></li>
+                    <li><a th:href="@{/blog/logout}">ログアウト</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="main-inner">
-            <section class="register-section">
-                <form action="" method="post" enctype="multipart/form-data">
-                    <h2>ブログ編集画面</h2>
-                    <div class="register-section-details">
-                        <div class="register-section-details_flex a">
-                            <div>タイトル</div>
-                            <input type="text" name="blogTitle" value="" id="adminName">
-                        </div>
-                        <div class="register-section-details_flex b">
-                            <div>内容</div>
-                            <textarea name="article" placeholder="内容"></textarea>
-                        </div>
-                        <div class="register-section-details_flex">
-                            <div>写真</div>
-                            <input type="file" name="blogImage">
-                        </div>
-                    </div>
+	<main>
+		<div class="main-inner">
+			<section class="register-section">
+				<form th:action="@{/blog/edit/process}" method="post" enctype="multipart/form-data">
+					<h2>ブログ編集画面</h2>
+					<div class="register-section-details">
+						<div class="register-section-details_flex a">
+							<div>タイトル</div>
+							<input type="text" name="titleName" th:value="${blog.blogTitle}" id="titleName">
+						</div>
+						<div class="register-section-details_flex b">
+							<div>内容</div>
+							<textarea name="article" placeholder="内容" th:text="${blog.article}"></textarea>
+						</div>
+						<div class="register-section-details_flex">
+							<div>写真</div>
+							<input type="file" name="blogImage">
+							<input type="hidden" name="existingImagePath" th:value="${blog.blogImage}">
+						</div>
+					</div>
 
-                    <div class="register-section-details_flex">
-                        <input type="hidden" name="blogId" value="">
-                        <button class="register">更新</button>
-                        <button class="back-btn" onclick="history.back();" type="button">戻る</button>
-                    </div>
-                    <form th:action="@{/blog/delete}" method="post">
-                        <div class="register-section-details_flex">
-                            <input type="hidden" name="blogId" value="">
-                            <button class="register">削除</button>
-                        </div>
-                    </form>
-                </form>
+					<div class="register-section-details_flex">
+						<input type="hidden" name="blogId" th:value="${blog.blogId}">
+						<button class="register" type="submit" th:formaction="@{/blog/edit/process}">更新</button>
+						<button class="back-btn" onclick="history.back();" type="button">戻る</button>
+						<button class="register" type="submit" th:formaction="@{/blog/delete}" onclick="return confirm('本当に削除しますか？');">削除</button>
+					</div>
+				</form>
 
-            </section>
-        </div>
-        <footer>
-            <small>&copy; 2025 LIANG CHAOHONG</small>
-        </footer>
-    </main>
+			</section>
+		</div>
+		<footer>
+			<small>&copy; 2025 LIANG CHAOHONG</small>
+		</footer>
+	</main>
 </body>
 
 </html>

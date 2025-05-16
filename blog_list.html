@@ -39,15 +39,21 @@
             </section>
             <section class="register-item">
                 <div class="all-view-register__button">
-                    <a href="" class="btn btn--gray btn btn--radius">ブログ登録</a>
+                    <a th:href="@{/blog/register}" class="btn btn--gray btn btn--radius">ブログ登録</a>
                 </div>
             </section>
             <ul class="blogs">
-                <li>
-                    <a href="">
-                        <img src="" alt="">
-                        <p></p><br>
-                        <p></p>
+                <li th:each="blog:${blogList}">
+                    <a th:href="@{/blog/edit/{blogId}(blogId=${blog.blogId})}">
+                        <p>
+                            投稿日：
+                            <span th:text="${blog.formattedCreateAt}"></span><br>
+                            編集日：
+                            <span th:text="${blog.formattedUpdateAt}"></span>
+                        </p>
+                        <img th:src="@{/blog-img/{imagePath}(imagePath=${blog.blogImage})}" alt="">
+                        <p th:text="${blog.blogTitle}"></p><br>
+                        <p th:text="${blog.article}"></p>
                     </a>
                 </li>
             </ul>
