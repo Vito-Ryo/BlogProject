@@ -34,10 +34,11 @@
 		<article>
 			<h2>ブログ一覧</h2>
 			<section class="nav-search">
-				<form action="/search" method="GET">
+				<form th:action="@{/search}" method="GET">
 					<input type="text" name="keyword" placeholder="キーワードを入力">
-					<button type="submit">検索</button>
+					<button type="submit">Search</button>
 				</form>
+			</section>
 			</section>
 			<section class="register-item">
 				<div class="all-view-register__button">
@@ -59,6 +60,9 @@
 					</a>
 				</li>
 			</ul>
+			<div th:if="${#lists.isEmpty(blogList)}">
+				<p style="text-align: center; color: dimgray;">検索結果が見つかりませんでした。</p>
+			</div>
 		</article>
 		<footer>
 			<small>&copy; 2025 LIANG CHAOHONG</small>

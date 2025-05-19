@@ -3,6 +3,7 @@ package pp.com.controllers;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -66,9 +67,14 @@ public class BlogRegisterController {
 			String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-").format(new Date())
 					+ blogImage.getOriginalFilename();
 			
+			// 外部フォルダ：プロジェクの uploads/blog-img/
+	        String uploadDir = System.getProperty("user.dir") + "/uploads/blog-img/";
+	        
 			//ファイルの保存作業
 			try {
-				Files.copy(blogImage.getInputStream(),Path.of("src/main/resources/static/blog-img/" + fileName));
+				// フォルダがなければ作成
+	            Files.createDirectories(Path.of(uploadDir));
+				Files.copy(blogImage.getInputStream(),Path.of(uploadDir + fileName), StandardCopyOption.REPLACE_EXISTING);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
