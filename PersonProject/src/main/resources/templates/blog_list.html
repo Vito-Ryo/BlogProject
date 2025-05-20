@@ -8,6 +8,7 @@
 	<link rel="stylesheet" th:href="@{/css/style.css}">
 	<link rel="stylesheet" th:href="@{/css/blog.css}">
 	<link rel="stylesheet" th:href="@{/css/blog_list.css}">
+	<link rel="stylesheet" th:href="@{/css/blog_list_custom.css}">
 	<link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
 	<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
 	<link th:href="@{https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap}" rel="stylesheet">
@@ -17,34 +18,31 @@
 		rel="stylesheet">
 </head>
 
-<body>
+<body class="blog-list-page">
 	<header class="nav-header">
-		<nav>
-			<div>
+		<div class="container">
+			<div class="nav-list-wrapper">
 				<ul class="nav-list">
+					<li><a th:href="@{/blog/register}" class="btn btn--gray btn--radius">NEW BLOG</a></li>
+					<li><a a th:href="@{/self-introduction}">自己紹介</a></li>
 					<li th:text="${accountName}"></li>
-					<li><a th:href="@{/blog/list}">ブログ一覧</a></li>
+					<li><a a th:href="@{/blog/list}">ブログ一覧</a></li>
 					<li><a th:href="@{/account/logout}">ログアウト</a></li>
 				</ul>
 			</div>
-		</nav>
+			<h2>WELCOME TO MY BLOG</h2>
+			<div class="nav-search">
+				<form action="/search" method="GET">
+					<input type="text" name="keyword" placeholder="キーワードを入力">
+					<button type="submit">検索</button>
+				</form>
+			</div>
+		</div>
 	</header>
-
+	
+	<div class="nav-offset"></div>
 	<main>
 		<article>
-			<h2>ブログ一覧</h2>
-			<section class="nav-search">
-				<form th:action="@{/search}" method="GET">
-					<input type="text" name="keyword" placeholder="キーワードを入力">
-					<button type="submit">Search</button>
-				</form>
-			</section>
-			</section>
-			<section class="register-item">
-				<div class="all-view-register__button">
-					<a th:href="@{/blog/register}" class="btn btn--gray btn btn--radius">ブログ登録</a>
-				</div>
-			</section>
 			<ul class="blogs">
 				<li th:each="blog:${blogList}">
 					<a th:href="@{/blog/edit/{blogId}(blogId=${blog.blogId})}">
@@ -60,9 +58,6 @@
 					</a>
 				</li>
 			</ul>
-			<div th:if="${#lists.isEmpty(blogList)}">
-				<p style="text-align: center; color: dimgray;">検索結果が見つかりませんでした。</p>
-			</div>
 		</article>
 		<footer>
 			<small>&copy; 2025 LIANG CHAOHONG</small>

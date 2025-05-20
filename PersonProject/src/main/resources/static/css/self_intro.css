@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playpen Sans Deva", "Kiwi Maru", sans-serif;
+  background: url("../images/bv.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2rem;
+}
+
+.intro-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.tagline {
+  color: #EC6015;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.intro-section {
+  margin-bottom: 1.5rem;
+}
+
+.intro-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+.intro-section p,
+.intro-section ul {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: #EC6015;
+  margin-right: 0.5rem;
+}
+
+.back-btn {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  padding: 0.6rem 2rem;
+  background-color: #EC6015;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #ffcd8f;
+  color: #333;
+  transform: translateY(-2px);
+}
