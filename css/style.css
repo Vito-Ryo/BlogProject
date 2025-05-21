@@ -89,7 +89,6 @@ form {
 
 /* --- フォームの見出し（h2） --- */
 form h2 {
-	position: fixed;
     text-align: center;
     /* テキストを中央に配置 */
     margin-bottom: 30px;
@@ -132,7 +131,6 @@ input:focus {
 
 /* --- ボタンの共通 --- */
 button {
-	position: fixed;
     width: 100%;
     padding: 12px;
     background-color: #ccc;

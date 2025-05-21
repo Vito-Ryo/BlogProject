@@ -1,0 +1,162 @@
+/* ========== 詳細ページ全体 ========== */
+body.blog-detail-page {
+	font-family: "Playpen Sans Deva", "Kiwi Maru", sans-serif;
+	background: url("../images/bv.jpg") no-repeat center center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 2rem;
+}
+
+/* 中央寄せの白いカード */
+.blog-detail-card {
+	background-color: rgba(255, 255, 255, 0.95);
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	margin-bottom: 3rem;
+}
+
+/* タイトル */
+.blog-detail-card h2 {
+	font-size: 2rem;
+	color: #333;
+	border-bottom: 2px solid #999;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* 投稿日、更新日、閲覧数などの小さめテキスト */
+.blog-detail-meta {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 1rem;
+	font-style: italic;
+}
+
+/* 本文 */
+.blog-detail-content {
+	font-size: 1.1rem;
+	color: #333;
+	line-height: 1.7;
+	margin-bottom: 2rem;
+}
+
+/* 画像 */
+.blog-detail-card img {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 1.5rem;
+}
+
+/* ボタン*/
+.btn-orange {
+	background-color: rgb(255, 0, 128);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	padding: 0.6rem 1.5rem;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.3s;
+	margin-right: 0.8rem;
+}
+
+.btn-orange:hover {
+	background-color: rgb(255, 0, 0);
+	color: #000;
+	transform: translateY(-3px);
+	/* 浮かせる */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	/* 影をつける */
+}
+
+/* コメント欄 */
+.comment-box {
+	margin-top: 2rem;
+}
+
+.comment-box h3 {
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.comment-box ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.comment-box li {
+	background-color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 0.8rem;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	color: #444;
+	font-size: 0.95rem;
+}
+
+/* コメント入力欄 */
+.comment-box textarea {
+	width: 100%;
+	padding: 0.8rem;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	resize: vertical;
+	margin-bottom: 0.8rem;
+	font-family: inherit;
+}
+
+.comment-box button {
+	background-color: #EC6015;
+	color: white;
+	padding: 0.6rem 1.5rem;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.comment-box button:hover {
+	background-color: #ffcd8f;
+	color: #000;
+}
+
+.btn-orange.back-btn {
+	display: block;
+	margin: 2rem auto;
+	text-align: center;
+	max-width: 200px;
+	width: fit-content; 
+	box-sizing: border-box;
+	padding: 0.6rem 1.5rem;
+	background-color: rgb(192, 192, 192);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s ease;
+	text-decoration: none;
+}
+
+.btn-orange.back-btn:hover {
+	background-color: #ffcd8f;
+	color: #000;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+	text-align: center;
+	margin-top: 4rem;
+	padding-bottom: 2rem;
+}
+
+footer small {
+	color: #333;
+	font-size: 0.9rem;
+}

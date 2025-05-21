@@ -24,9 +24,9 @@
 			<div class="nav-list-wrapper">
 				<ul class="nav-list">
 					<li><a th:href="@{/blog/register}" class="btn btn--gray btn--radius">NEW BLOG</a></li>
-					<li><a a th:href="@{/self-introduction}">自己紹介</a></li>
 					<li th:text="${accountName}"></li>
-					<li><a a th:href="@{/blog/list}">ブログ一覧</a></li>
+					<li><a th:href="@{/self-introduction}">自己紹介</a></li>
+					<li><a th:href="@{/blog/list}">ブログ一覧</a></li>
 					<li><a th:href="@{/account/logout}">ログアウト</a></li>
 				</ul>
 			</div>
@@ -39,23 +39,44 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div class="nav-offset"></div>
 	<main>
 		<article>
 			<ul class="blogs">
-				<li th:each="blog:${blogList}">
-					<a th:href="@{/blog/edit/{blogId}(blogId=${blog.blogId})}">
+				<li th:each="summary : ${blogSummaries}">
+					<div class="blog-card" th:with="isEditable=${isAdmin}, blogId=${summary.blog.blogId}">
+						<a th:if="${isAdmin}" th:href="@{/blog/edit/{blogId}(blogId=${summary.blog.blogId})}"
+							class="blog-card">
 						<p>
-							投稿日：
-							<span th:text="${blog.formattedCreateAt}"></span><br>
-							編集日：
-							<span th:text="${blog.formattedUpdateAt}"></span>
+							投稿日：<span th:text="${summary.blog.formattedCreateAt}"></span><br>
+							編集日：<span th:text="${summary.blog.formattedUpdateAt}"></span>
 						</p>
-						<img th:src="@{/blog-img/{imagePath}(imagePath=${blog.blogImage})}" alt="">
-						<p th:text="${blog.blogTitle}"></p><br>
-						<p th:text="${blog.article}"></p>
-					</a>
+
+						<img th:src="@{/blog-img/{imagePath}(imagePath=${summary.blog.blogImage})}" alt="ブログ画像" />
+
+						<p th:text="${summary.blog.blogTitle}"></p>
+						<p th:text="${summary.blog.article}"></p>
+
+						<p>閲覧数：
+							<span class="view-count" th:attr="data-id=${summary.blog.blogId}">?</span>
+						</p>
+
+						<p class="comment-snippet">
+							コメント：
+							<span
+								th:text="${summary.latestComment != null ? summary.latestComment : 'コメントはまだありません'}"></span>
+						</p>
+
+						<p class="like-count">
+							♥ いいね：<span th:text="${summary.likeCount}">0</span>
+						</p>
+
+						<p class="card-button">
+							<a th:href="@{/blog/detail/{blogId}(blogId=${summary.blog.blogId})}"
+								class="btn btn--gray btn--radius">コメント</a>
+						</p>
+					</div>
 				</li>
 			</ul>
 		</article>
@@ -63,6 +84,28 @@
 			<small>&copy; 2025 LIANG CHAOHONG</small>
 		</footer>
 	</main>
+	<script>
+		// ページが読み込まれた後に実行
+		document.addEventListener('DOMContentLoaded', () => {
+			// class="view-count" のすべての要素を取得
+			document.querySelectorAll('.view-count').forEach(span => {
+				// 各ブログのIDを取得（data-id 属性から）
+				const blogId = span.getAttribute('data-id');
+
+				// 閲覧数を取得するAPIを呼び出す
+				fetch(`/api/blog/view-count/${blogId}`)
+					.then(response => response.text()) // レスポンスをテキスト（数値）として取得
+					.then(count => {
+						// 閲覧数を画面に表示
+						span.textContent = count;
+					})
+					.catch(() => {
+						// 取得失敗時の表示
+						span.textContent = '取得失敗';
+					});
+			});
+		});
+	</script>
 </body>
 
 </html>

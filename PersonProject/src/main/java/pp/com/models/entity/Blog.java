@@ -30,6 +30,10 @@ public class Blog {
 	private LocalDateTime createAt;
 	// 更新日時
 	private LocalDateTime updateAt;
+	// 閲覧数フィールドを追加
+	private int viewCount;
+	// いいね数
+	private int likeCount;
 
 	// 空のコンストラク
 	public Blog() {
@@ -127,6 +131,22 @@ public class Blog {
 
 	public void setUpdateAt(LocalDateTime updateAt) {
 		this.updateAt = updateAt;
+	}
+
+	public int getViewCount() {
+		return viewCount;
+	}
+
+	public void setViewCount(int viewCount) {
+		this.viewCount = viewCount;
+	}
+
+	public int getLikeCount() {
+		return likeCount;
+	}
+
+	public void setLikeCount(int likeCount) {
+		this.likeCount = likeCount;
 	}
 
 }

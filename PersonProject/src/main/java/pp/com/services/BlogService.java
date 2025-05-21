@@ -24,7 +24,7 @@ public class BlogService {
 		}
 	}
 
-	// 商品の登録処理チェック
+	// ブログの登録処理チェック
 	// もし、findByBlogTitleが==nullだったら
 	// 保存処理true
 	// そうでない場合、false
@@ -84,16 +84,21 @@ public class BlogService {
 		}
 	}
 
-	// 指定されたアカウントのブログの中から、タイトルまた内容にキーワードを含むものを検索
-	public List<Blog> searchBlogKeyword(Long accountId, String keyword) {
-		if (accountId == null || keyword == null || keyword.trim().isEmpty()) {
-			// アカウントまたキーワードがない場合、空のリストを返す
-			return List.of();
-		}
+    /**
+     * すべてのブログ記事を取得する
+     * @return Blogのリスト
+     */
+    public List<Blog> selectAllBlog() {
+        return blogDao.findAll(); // ← JpaRepository の基本メソッド
+    }
+    
+    
+ // ブログの検索機能（タイトル or 内容にキーワードが含まれるもの）
+    public List<Blog> searchBlogKeyword(Long accountId, String keyword) {
+        // 今回はログイン中のアカウント ID に関係なく、すべてのブログから検索
+        return blogDao.findByBlogTitleContainingOrArticleContaining(keyword, keyword);
+    }
 
-		// タイトルまた内容にキーワードを含むブログを検索
-		return blogDao.findByAccountIdAndBlogTitleContainingOrAccountIdAndArticleContaining(accountId, keyword,
-				accountId, keyword);
-	}
+	
 
 }

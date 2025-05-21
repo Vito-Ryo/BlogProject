@@ -5,57 +5,78 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ブログ一覧</title>
-	<link rel="stylesheet" href="css/blog_list_custom.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/blog.css">
-	<link rel="stylesheet" href="css/blog_list.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+	<link rel="stylesheet" th:href="@{/css/blog.css}">
+	<link rel="stylesheet" th:href="@{/css/blog_list.css}">
+	<link rel="stylesheet" th:href="@{/css/blog_list_custom.css}">
+	<link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+	<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+	<link th:href="@{https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap}" rel="stylesheet">
+	<link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+	<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+	<link th:href="@{https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap}"
+		rel="stylesheet">
 </head>
 
-<body>
+<body class="blog-list-page">
 	<header class="nav-header">
-		<nav>
-			<div>
+		<div class="container">
+			<div class="nav-list-wrapper">
 				<ul class="nav-list">
-					<li><a href="">ブログ一覧</a></li>
-					<li><a href="">ログアウト</a></li>
+					<li><a th:href="@{/blog/register}" class="btn btn--gray btn--radius">NEW BLOG</a></li>
+					<li th:text="${accountName}"></li>
+					<li><a th:href="@{/self-introduction}">自己紹介</a></li>
+					<li><a th:href="@{/blog/list}">ブログ一覧</a></li>
+					<li><a th:href="@{/account/logout}">ログアウト</a></li>
 				</ul>
 			</div>
-		</nav>
-	</header>
-
-	<main>
-		<article>
-			<h2>ブログ一覧</h2>
-			<section class="nav-search">
+			<h2>WELCOME TO MY BLOG</h2>
+			<div class="nav-search">
 				<form action="/search" method="GET">
 					<input type="text" name="keyword" placeholder="キーワードを入力">
 					<button type="submit">検索</button>
 				</form>
-			</section>
-			<section class="register-item">
-				<div class="all-view-register__button">
-					<a th:href="@{/blog/register}" class="btn btn--gray btn btn--radius">ブログ登録</a>
-				</div>
-			</section>
+			</div>
+		</div>
+	</header>
+
+	<div class="nav-offset"></div>
+	<main>
+		<article>
 			<ul class="blogs">
-				<li th:each="blog:${blogList}">
-					<a th:href="@{/blog/edit/{blogId}(blogId=${blog.blogId})}">
+				<li th:each="summary : ${blogSummaries}">
+					<div class="blog-card" th:with="isEditable=${isAdmin}, blogId=${summary.blog.blogId}">
+						<a th:if="${isAdmin}" th:href="@{/blog/edit/{blogId}(blogId=${summary.blog.blogId})}"
+							class="blog-card">
 						<p>
-							投稿日：
-							<span th:text="${blog.formattedCreateAt}"></span><br>
-							編集日：
-							<span th:text="${blog.formattedUpdateAt}"></span>
+							投稿日：<span th:text="${summary.blog.formattedCreateAt}"></span><br>
+							編集日：<span th:text="${summary.blog.formattedUpdateAt}"></span>
 						</p>
-						<img th:src="@{/blog-img/{imagePath}(imagePath=${blog.blogImage})}" alt="">
-						<p th:text="${blog.blogTitle}"></p><br>
-						<p th:text="${blog.article}"></p>
-					</a>
+
+						<img th:src="@{/blog-img/{imagePath}(imagePath=${summary.blog.blogImage})}" alt="ブログ画像" />
+
+						<p th:text="${summary.blog.blogTitle}"></p>
+						<p th:text="${summary.blog.article}"></p>
+
+						<p>閲覧数：
+							<span class="view-count" th:attr="data-id=${summary.blog.blogId}">?</span>
+						</p>
+
+						<p class="comment-snippet">
+							コメント：
+							<span
+								th:text="${summary.latestComment != null ? summary.latestComment : 'コメントはまだありません'}"></span>
+						</p>
+
+						<p class="like-count">
+							♥ いいね：<span th:text="${summary.likeCount}">0</span>
+						</p>
+
+						<p class="card-button">
+							<a th:href="@{/blog/detail/{blogId}(blogId=${summary.blog.blogId})}"
+								class="btn btn--gray btn--radius">コメント</a>
+						</p>
+					</div>
 				</li>
 			</ul>
 		</article>
@@ -63,6 +84,28 @@
 			<small>&copy; 2025 LIANG CHAOHONG</small>
 		</footer>
 	</main>
+	<script>
+		// ページが読み込まれた後に実行
+		document.addEventListener('DOMContentLoaded', () => {
+			// class="view-count" のすべての要素を取得
+			document.querySelectorAll('.view-count').forEach(span => {
+				// 各ブログのIDを取得（data-id 属性から）
+				const blogId = span.getAttribute('data-id');
+
+				// 閲覧数を取得するAPIを呼び出す
+				fetch(`/api/blog/view-count/${blogId}`)
+					.then(response => response.text()) // レスポンスをテキスト（数値）として取得
+					.then(count => {
+						// 閲覧数を画面に表示
+						span.textContent = count;
+					})
+					.catch(() => {
+						// 取得失敗時の表示
+						span.textContent = '取得失敗';
+					});
+			});
+		});
+	</script>
 </body>
 
 </html>

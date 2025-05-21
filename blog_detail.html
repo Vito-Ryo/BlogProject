@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BLOG</title>
+	<link rel="stylesheet" th:href="@{/css/blog_detail.css}">
+	<link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+	<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+	<link th:href="@{https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap}" rel="stylesheet">
+	<link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+	<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+	<link th:href="@{https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap}"
+		rel="stylesheet">
+</head>
+
+<body class="blog-detail-page">
+	<div class="blog-detail-card">
+		<h2 th:text="${blog.blogTitle}">タイトル</h2>
+
+		<div class="blog-detail-meta">
+			<p>
+				投稿日：<span th:text="${blog.formattedCreateAt}">2025-01-01</span>｜
+				編集日：<span th:text="${blog.formattedUpdateAt}">2025-01-01</span>｜
+				閲覧数：<span class="view-count" th:text="${blog.viewCount}">0</span>
+			</p>
+		</div>
+
+		<img th:src="@{/blog-img/{imagePath}(imagePath=${blog.blogImage})}" alt="ブログ画像">
+
+		<div class="blog-detail-content" th:text="${blog.article}">
+			本文がここに表示されます。
+		</div>
+
+		<form method="post" th:action="@{/blog/like/{id}(id=${blog.blogId})}">
+			<button type="submit" class="btn-orange">♥ いいね</button>
+		</form>
+
+		<div class="comment-box">
+			<form method="post" action="/blog/comment">
+				<textarea name="text" placeholder="コメントを書く"></textarea>
+				<input type="hidden" name="blogId" th:value="${blog.blogId}">
+				<button type="submit">コメントを投稿</button>
+			</form>
+			<a th:href="@{/blog/list}" class="btn-orange back-btn">ホームページに戻る</a>
+		</div>
+
+	</div>
+
+	<footer>
+		<small>&copy; 2025 LIANG CHAOHONG</small>
+	</footer>
+</body>
+
+</html>

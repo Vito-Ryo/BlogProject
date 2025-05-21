@@ -3,6 +3,8 @@ package pp.com.models.dao;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import jakarta.transaction.Transactional;
@@ -33,5 +35,20 @@ public interface BlogDao extends JpaRepository<Blog, Long> {
 	// ログインユーザーのアカウントに一致し、タイトルまた内容にキーワードを含むブログを検索
 	List<Blog> findByAccountIdAndBlogTitleContainingOrAccountIdAndArticleContaining(Long accountId1,
 			String titleKeyword, Long accountId2, String articleKeyword);
-
+	
+	// タイトルまたは内容にキーワードを含むブログを検索
+	List<Blog> findByBlogTitleContainingOrArticleContaining(String blogTitle, String article);
+	
+	
+    /**
+     * 指定されたブログIDに対して、「いいね」数をカウントする。
+     * Likeテーブルにblog_idが対応している前提。
+     *
+     * @param blogId 対象のブログID
+     * @return いいねの件数（int型）
+     */
+	@Query("SELECT COUNT(l) FROM Like l WHERE l.blogId = :blogId")
+	int countByBlogId(@Param("blogId") Long blogId);
 }
+
+

@@ -18,6 +18,8 @@ public class Account {
 	private String accountEmail;
 	// password
 	private String password;
+    /** ユーザーの権限（"ADMIN" または "USER"） */
+    private String role;
 
 	// 空のコンストラク
 	public Account() {
@@ -61,6 +63,14 @@ public class Account {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 }

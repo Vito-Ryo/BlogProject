@@ -1,12 +1,203 @@
-/* --- 検索バーをタイトルの左下に配置 --- */
-.nav-search {
-    position: absolute;
-    top: 160px; 
-    left: 10%;
-    z-index: 10;
+/* ========== ブログ一覧ページの全体設定 ========== */
+/* フォームの中央寄せを解除し、全体的なスタイルを初期化 */
+body.blog-list-page.blog-list-page {
+	all: unset; /* すべてのスタイルをリセット */
+	margin: 0;
+	padding: 0;
+	font-family: "Playpen Sans Deva", "Kiwi Maru", sans-serif;
+	background: url("../images/bv.jpg") no-repeat center center fixed; /* 背景画像を中央に固定表示 */
+	background-size: cover; /* 画像を画面全体にカバー */
 }
 
+/* ========== 検索バー関連 ========== */
+/* 検索バーを中央に配置し、上下に余白を設定 */
+.nav-search {
+	display: flex;
+	justify-content: center; /* 水平方向中央揃え */
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
 
-header.nav-header {
-    position: relative;
+/* 検索フォームの外観設定 */
+.nav-search form {
+	all: unset; /* デフォルトスタイルを解除 */
+	display: flex;
+	gap: 0.5rem; /* 入力とボタンの間に隙間 */
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 0.4rem 0.8rem;
+	border-radius: 30px; /* 丸み */
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+	max-width: 400px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* テキスト入力フィールド */
+.nav-search form input[type="text"] {
+	all: unset;
+	flex-grow: 1; /* 幅を自動調整 */
+	padding: 0.4rem 0.8rem;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-size: 0.9rem;
+}
+
+/* 検索ボタン */
+.nav-search form button {
+	all: unset;
+	background-color: #EC6015;
+	color: white;
+	padding: 0.4rem 1rem;
+	border-radius: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	transition: background-color 0.3s;
+}
+
+/* ボタンのホバー効果 */
+.nav-search form button:hover {
+	background-color: #ffcd8f;
+	color: #000;
+}
+
+/* ヘッダー下に空白を作るためのスペーサー */
+.nav-offset {
+	height: 300px;
+}
+
+/* ========== 閲覧数・コメント・いいね表示 ========== */
+.view-count {
+	font-size: 0.8rem;
+	color: #555;
+	font-style: italic;
+}
+
+/* コメントといいねの共通スタイル */
+.comment-snippet,
+.like-count {
+	font-size: 0.9rem;
+	color: #555;
+	margin: 0.5rem 1rem;
+	font-style: italic;
+}
+
+/* いいねの強調スタイル */
+.like-count {
+	color: #EC6015;
+	font-weight: bold;
+}
+
+/* ========== ボタン（汎用） ========== */
+.blogs .btn {
+	display: inline-block;
+	padding: 0.6rem 1.5rem;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 30px;
+	background-color: #ccc;
+	color: #000;
+	transition: background-color 0.3s;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* グレーボタンのスタイル */
+.blogs .btn--gray {
+	background-color: #aaa;
+	color: #fff;
+}
+
+/* グレーボタンのホバー効果 */
+.blogs .btn--gray:hover {
+	background-color: #ffcd8f;
+	color: #000;
+	transform: translateY(-4px); /* 少し浮き上がる */
+}
+
+/* 各ブログ項目の中央揃えの説明文 */
+.blogs li p {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+/* ========== ブログカード一覧（グリッド） ========== */
+.blogs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px); /* カードの自動配置 */
+	gap: 1.5rem; /* カード間のスペース */
+	padding: 2rem 1rem;
+	box-sizing: border-box;
+	justify-content: center;
+	width: auto;
+	margin: 0 auto;
+}
+
+/* 各ブログカードのスタイル */
+.blogs li {
+	width: 320px;
+	list-style: none;
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	padding: 1rem;
+	box-sizing: border-box;
+	transition: transform 0.3s;
+	overflow: hidden;
+	margin: auto;
+}
+
+/* ホバー時にカードを浮かせる */
+.blogs li:hover {
+	transform: translateY(-5px);
+}
+
+/* ブログ画像のスタイル */
+.blogs li img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+/* ブログカード内の説明文 */
+.blogs li p {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+/* カード全体をクリック可能にしつつ構造を維持 */
+.blog-card {
+	text-decoration: none;
+	color: inherit;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+/* ブログカード内のテキスト部分 */
+.blog-card p {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	margin-bottom: 0.5rem;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* コメントボタンを中央揃えに配置 */
+.card-button {
+	margin-top: 1rem;
+	text-align: center;
 }
