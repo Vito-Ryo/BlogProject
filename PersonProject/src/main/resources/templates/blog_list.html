@@ -45,9 +45,9 @@
 		<article>
 			<ul class="blogs">
 				<li th:each="summary : ${blogSummaries}">
-					<div class="blog-card" th:with="isEditable=${isAdmin}, blogId=${summary.blog.blogId}">
-						<a th:if="${isAdmin}" th:href="@{/blog/edit/{blogId}(blogId=${summary.blog.blogId})}"
-							class="blog-card">
+					<div class="blog-card" th:with="blogId=${summary.blog.blogId}">
+
+						<!-- タイトル部分だけ管理者に編集リンクをつける -->
 						<p>
 							投稿日：<span th:text="${summary.blog.formattedCreateAt}"></span><br>
 							編集日：<span th:text="${summary.blog.formattedUpdateAt}"></span>
@@ -55,7 +55,13 @@
 
 						<img th:src="@{/blog-img/{imagePath}(imagePath=${summary.blog.blogImage})}" alt="ブログ画像" />
 
-						<p th:text="${summary.blog.blogTitle}"></p>
+						<!-- 管理者の場合だけ、タイトルが編集ページのリンクになる -->
+						<p th:if="${isAdmin}">
+							<a th:href="@{/blog/edit/{blogId}(blogId=${summary.blog.blogId})}" class="edit-link"
+								th:text="${summary.blog.blogTitle}"></a>
+						</p>
+						<p th:unless="${isAdmin}" th:text="${summary.blog.blogTitle}"></p>
+
 						<p th:text="${summary.blog.article}"></p>
 
 						<p>閲覧数：
@@ -76,6 +82,7 @@
 							<a th:href="@{/blog/detail/{blogId}(blogId=${summary.blog.blogId})}"
 								class="btn btn--gray btn--radius">コメント</a>
 						</p>
+
 					</div>
 				</li>
 			</ul>
