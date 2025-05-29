@@ -1,21 +1,16 @@
-2025-05-22T09:09:02.990+09:00  INFO 30848 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 30848 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:09:02.999+09:00  INFO 30848 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:09:03.418+09:00  INFO 30848 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:09:03.472+09:00  INFO 30848 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:09:03.832+09:00  INFO 30848 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:09:03.849+09:00  INFO 30848 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:09:03.849+09:00  INFO 30848 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:09:03.895+09:00  INFO 30848 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:09:03.896+09:00  INFO 30848 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 865 ms
-2025-05-22T09:09:04.030+09:00  INFO 30848 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:09:04.088+09:00  INFO 30848 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:09:04.118+09:00  INFO 30848 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:09:04.352+09:00  INFO 30848 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:09:04.380+09:00  INFO 30848 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:09:04.550+09:00  INFO 30848 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1da745a2
-2025-05-22T09:09:04.551+09:00  INFO 30848 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:09:04.582+09:00  WARN 30848 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:09:04.594+09:00  INFO 30848 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T10:50:06.842+09:00  INFO 57168 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Starting AccountLoginControllerTest using Java 21.0.6 with PID 57168 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T10:50:06.854+09:00  INFO 57168 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T10:50:07.766+09:00  INFO 57168 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T10:50:07.844+09:00  INFO 57168 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2025-05-28T10:50:09.862+09:00  INFO 57168 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T10:50:10.044+09:00  INFO 57168 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T10:50:10.157+09:00  INFO 57168 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T10:50:10.508+09:00  INFO 57168 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T10:50:10.582+09:00  INFO 57168 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T10:50:10.987+09:00  INFO 57168 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@630793f3
+2025-05-28T10:50:10.992+09:00  INFO 57168 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T10:50:11.063+09:00  WARN 57168 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T10:50:11.099+09:00  INFO 57168 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -23,39 +18,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:09:05.282+09:00  INFO 30848 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:09:05.317+09:00  INFO 30848 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:09:05.577+09:00  INFO 30848 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:09:05.995+09:00  WARN 30848 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:09:06.300+09:00  INFO 30848 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:09:06.305+09:00  INFO 30848 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.597 seconds (process running for 4.032)
-2025-05-22T09:09:19.965+09:00  INFO 30848 --- [PersonProject] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:09:19.965+09:00  INFO 30848 --- [PersonProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:09:19.967+09:00  INFO 30848 --- [PersonProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-05-22T09:28:45.002+09:00  INFO 30848 --- [PersonProject] [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:28:45.005+09:00  INFO 30848 --- [PersonProject] [RMI TCP Connection(30)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:28:45.010+09:00  INFO 30848 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:28:45.013+09:00  INFO 30848 --- [PersonProject] [RMI TCP Connection(30)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:28:45.014+09:00  INFO 30848 --- [PersonProject] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:28:45.017+09:00  INFO 30848 --- [PersonProject] [RMI TCP Connection(30)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:28:46.613+09:00  INFO 45888 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 45888 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:28:46.614+09:00  INFO 45888 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:28:47.023+09:00  INFO 45888 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:28:47.073+09:00  INFO 45888 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:28:47.362+09:00  INFO 45888 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:28:47.371+09:00  INFO 45888 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:28:47.373+09:00  INFO 45888 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:28:47.411+09:00  INFO 45888 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:28:47.412+09:00  INFO 45888 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 770 ms
-2025-05-22T09:28:47.512+09:00  INFO 45888 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:28:47.548+09:00  INFO 45888 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:28:47.571+09:00  INFO 45888 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:28:47.768+09:00  INFO 45888 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:28:47.795+09:00  INFO 45888 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:28:47.960+09:00  INFO 45888 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1da75dde
-2025-05-22T09:28:47.961+09:00  INFO 45888 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:28:47.986+09:00  WARN 45888 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:28:47.999+09:00  INFO 45888 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T10:50:12.552+09:00  INFO 57168 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T10:50:12.603+09:00  INFO 57168 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T10:50:13.107+09:00  INFO 57168 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T10:50:14.157+09:00  WARN 57168 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T10:50:14.706+09:00  INFO 57168 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T10:50:14.706+09:00  INFO 57168 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T10:50:14.707+09:00  INFO 57168 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-28T10:50:14.737+09:00  INFO 57168 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Started AccountLoginControllerTest in 8.442 seconds (process running for 10.147)
+2025-05-28T10:50:15.880+09:00  INFO 57168 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T10:50:15.884+09:00  INFO 57168 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T10:50:15.889+09:00  INFO 57168 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T10:51:28.845+09:00  INFO 34892 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Starting AccountLoginControllerTest using Java 21.0.6 with PID 34892 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T10:51:28.847+09:00  INFO 34892 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T10:51:29.645+09:00  INFO 34892 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T10:51:29.720+09:00  INFO 34892 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2025-05-28T10:51:31.392+09:00  INFO 34892 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T10:51:31.524+09:00  INFO 34892 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T10:51:31.613+09:00  INFO 34892 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T10:51:31.926+09:00  INFO 34892 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T10:51:31.997+09:00  INFO 34892 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T10:51:32.476+09:00  INFO 34892 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42141c59
+2025-05-28T10:51:32.480+09:00  INFO 34892 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T10:51:32.542+09:00  WARN 34892 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T10:51:32.580+09:00  INFO 34892 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -63,39 +49,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:28:48.598+09:00  INFO 45888 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:28:48.627+09:00  INFO 45888 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:28:48.846+09:00  INFO 45888 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:28:49.232+09:00  WARN 45888 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:28:49.486+09:00  INFO 45888 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:28:49.492+09:00  INFO 45888 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.167 seconds (process running for 3.585)
-2025-05-22T09:28:53.151+09:00  INFO 45888 --- [PersonProject] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:28:53.151+09:00  INFO 45888 --- [PersonProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:28:53.152+09:00  INFO 45888 --- [PersonProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T09:35:56.325+09:00  INFO 45888 --- [PersonProject] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:35:56.326+09:00  INFO 45888 --- [PersonProject] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:35:56.332+09:00  INFO 45888 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:35:56.335+09:00  INFO 45888 --- [PersonProject] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:35:56.336+09:00  INFO 45888 --- [PersonProject] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:35:56.338+09:00  INFO 45888 --- [PersonProject] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:35:57.879+09:00  INFO 34616 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 34616 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:35:57.881+09:00  INFO 34616 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:35:58.280+09:00  INFO 34616 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:35:58.328+09:00  INFO 34616 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:35:58.608+09:00  INFO 34616 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:35:58.617+09:00  INFO 34616 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:35:58.618+09:00  INFO 34616 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:35:58.657+09:00  INFO 34616 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:35:58.657+09:00  INFO 34616 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
-2025-05-22T09:35:58.761+09:00  INFO 34616 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:35:58.796+09:00  INFO 34616 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:35:58.819+09:00  INFO 34616 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:35:59.005+09:00  INFO 34616 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:35:59.026+09:00  INFO 34616 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:35:59.181+09:00  INFO 34616 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7db791df
-2025-05-22T09:35:59.182+09:00  INFO 34616 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:35:59.205+09:00  WARN 34616 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:35:59.216+09:00  INFO 34616 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T10:51:33.890+09:00  INFO 34892 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T10:51:33.935+09:00  INFO 34892 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T10:51:34.427+09:00  INFO 34892 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T10:51:35.322+09:00  WARN 34892 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T10:51:35.750+09:00  INFO 34892 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T10:51:35.750+09:00  INFO 34892 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T10:51:35.752+09:00  INFO 34892 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-05-28T10:51:35.777+09:00  INFO 34892 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Started AccountLoginControllerTest in 7.417 seconds (process running for 8.948)
+2025-05-28T10:51:36.861+09:00  INFO 34892 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T10:51:36.863+09:00  INFO 34892 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T10:51:36.868+09:00  INFO 34892 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T11:51:45.458+09:00  INFO 40108 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Starting AccountRegisterControllerTest using Java 21.0.6 with PID 40108 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T11:51:45.459+09:00  INFO 40108 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T11:51:46.316+09:00  INFO 40108 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T11:51:46.396+09:00  INFO 40108 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-05-28T11:51:48.200+09:00  INFO 40108 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T11:51:48.341+09:00  INFO 40108 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T11:51:48.444+09:00  INFO 40108 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T11:51:48.808+09:00  INFO 40108 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T11:51:48.886+09:00  INFO 40108 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T11:51:49.292+09:00  INFO 40108 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f47bd4d
+2025-05-28T11:51:49.296+09:00  INFO 40108 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T11:51:49.363+09:00  WARN 40108 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T11:51:49.404+09:00  INFO 40108 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -103,39 +80,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:35:59.818+09:00  INFO 34616 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:35:59.848+09:00  INFO 34616 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:36:00.066+09:00  INFO 34616 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:36:00.436+09:00  WARN 34616 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:36:00.686+09:00  INFO 34616 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:36:00.692+09:00  INFO 34616 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.101 seconds (process running for 3.521)
-2025-05-22T09:36:06.276+09:00  INFO 34616 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:36:06.276+09:00  INFO 34616 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:36:06.277+09:00  INFO 34616 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T09:37:07.035+09:00  INFO 34616 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:37:07.036+09:00  INFO 34616 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:37:07.041+09:00  INFO 34616 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:37:07.044+09:00  INFO 34616 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:37:07.045+09:00  INFO 34616 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:37:07.046+09:00  INFO 34616 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:37:08.711+09:00  INFO 41248 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 41248 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:37:08.713+09:00  INFO 41248 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:37:09.128+09:00  INFO 41248 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:37:09.176+09:00  INFO 41248 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:37:09.456+09:00  INFO 41248 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:37:09.465+09:00  INFO 41248 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:37:09.465+09:00  INFO 41248 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:37:09.503+09:00  INFO 41248 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:37:09.503+09:00  INFO 41248 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
-2025-05-22T09:37:09.609+09:00  INFO 41248 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:37:09.643+09:00  INFO 41248 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:37:09.666+09:00  INFO 41248 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:37:09.846+09:00  INFO 41248 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:37:09.874+09:00  INFO 41248 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:37:10.031+09:00  INFO 41248 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3321291a
-2025-05-22T09:37:10.033+09:00  INFO 41248 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:37:10.056+09:00  WARN 41248 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:37:10.074+09:00  INFO 41248 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T11:51:50.761+09:00  INFO 40108 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T11:51:50.803+09:00  INFO 40108 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:51:51.249+09:00  INFO 40108 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T11:51:52.109+09:00  WARN 40108 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T11:51:52.563+09:00  INFO 40108 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T11:51:52.564+09:00  INFO 40108 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T11:51:52.565+09:00  INFO 40108 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-28T11:51:52.593+09:00  INFO 40108 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Started AccountRegisterControllerTest in 7.62 seconds (process running for 9.239)
+2025-05-28T11:51:53.632+09:00  INFO 40108 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:51:53.634+09:00  INFO 40108 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T11:51:53.638+09:00  INFO 40108 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T11:53:08.491+09:00  INFO 57652 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Starting AccountRegisterControllerTest using Java 21.0.6 with PID 57652 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T11:53:08.493+09:00  INFO 57652 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T11:53:09.304+09:00  INFO 57652 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T11:53:09.378+09:00  INFO 57652 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2025-05-28T11:53:09.868+09:00  INFO 57652 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T11:53:09.953+09:00  INFO 57652 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T11:53:10.011+09:00  INFO 57652 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T11:53:10.531+09:00  INFO 57652 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T11:53:10.597+09:00  INFO 57652 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T11:53:10.877+09:00  INFO 57652 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2088e339
+2025-05-28T11:53:10.879+09:00  INFO 57652 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T11:53:10.924+09:00  WARN 57652 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T11:53:10.954+09:00  INFO 57652 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -143,39 +111,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:37:10.660+09:00  INFO 41248 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:37:10.690+09:00  INFO 41248 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:37:10.904+09:00  INFO 41248 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:37:11.281+09:00  WARN 41248 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:37:11.531+09:00  INFO 41248 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:37:11.538+09:00  INFO 41248 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.12 seconds (process running for 3.544)
-2025-05-22T09:37:14.402+09:00  INFO 41248 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:37:14.403+09:00  INFO 41248 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:37:14.404+09:00  INFO 41248 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T09:39:44.540+09:00  INFO 41248 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:39:44.541+09:00  INFO 41248 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:39:44.547+09:00  INFO 41248 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:39:44.550+09:00  INFO 41248 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:39:44.551+09:00  INFO 41248 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:39:44.553+09:00  INFO 41248 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:39:46.165+09:00  INFO 19020 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 19020 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:39:46.166+09:00  INFO 19020 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:39:46.576+09:00  INFO 19020 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:39:46.629+09:00  INFO 19020 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:39:46.946+09:00  INFO 19020 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:39:46.959+09:00  INFO 19020 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:39:46.959+09:00  INFO 19020 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:39:46.999+09:00  INFO 19020 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:39:46.999+09:00  INFO 19020 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 803 ms
-2025-05-22T09:39:47.124+09:00  INFO 19020 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:39:47.165+09:00  INFO 19020 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:39:47.191+09:00  INFO 19020 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:39:47.402+09:00  INFO 19020 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:39:47.424+09:00  INFO 19020 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:39:47.585+09:00  INFO 19020 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d522180
-2025-05-22T09:39:47.586+09:00  INFO 19020 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:39:47.609+09:00  WARN 19020 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:39:47.623+09:00  INFO 19020 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T11:53:12.098+09:00  INFO 57652 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T11:53:12.137+09:00  INFO 57652 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:53:12.480+09:00  INFO 57652 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T11:53:13.329+09:00  WARN 57652 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T11:53:13.738+09:00  INFO 57652 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T11:53:13.739+09:00  INFO 57652 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T11:53:13.739+09:00  INFO 57652 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-05-28T11:53:13.766+09:00  INFO 57652 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Started AccountRegisterControllerTest in 5.752 seconds (process running for 7.207)
+2025-05-28T11:53:14.758+09:00  INFO 57652 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:53:14.760+09:00  INFO 57652 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T11:53:14.762+09:00  INFO 57652 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T11:53:51.570+09:00  INFO 57812 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Starting AccountRegisterControllerTest using Java 21.0.6 with PID 57812 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T11:53:51.572+09:00  INFO 57812 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T11:53:52.334+09:00  INFO 57812 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T11:53:52.405+09:00  INFO 57812 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2025-05-28T11:53:54.048+09:00  INFO 57812 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T11:53:54.172+09:00  INFO 57812 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T11:53:54.269+09:00  INFO 57812 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T11:53:54.600+09:00  INFO 57812 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T11:53:54.678+09:00  INFO 57812 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T11:53:55.063+09:00  INFO 57812 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42141c59
+2025-05-28T11:53:55.072+09:00  INFO 57812 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T11:53:55.141+09:00  WARN 57812 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T11:53:55.175+09:00  INFO 57812 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -183,39 +142,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:39:48.198+09:00  INFO 19020 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:39:48.226+09:00  INFO 19020 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:39:48.438+09:00  INFO 19020 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:39:48.823+09:00  WARN 19020 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:39:49.082+09:00  INFO 19020 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:39:49.088+09:00  INFO 19020 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.205 seconds (process running for 3.621)
-2025-05-22T09:39:52.436+09:00  INFO 19020 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:39:52.436+09:00  INFO 19020 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:39:52.438+09:00  INFO 19020 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-05-22T09:41:20.456+09:00  INFO 19020 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:41:20.458+09:00  INFO 19020 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:41:20.463+09:00  INFO 19020 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:41:20.465+09:00  INFO 19020 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:41:20.466+09:00  INFO 19020 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:41:20.468+09:00  INFO 19020 --- [PersonProject] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:41:22.124+09:00  INFO 38328 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 38328 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:41:22.125+09:00  INFO 38328 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:41:22.532+09:00  INFO 38328 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:41:22.580+09:00  INFO 38328 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:41:22.866+09:00  INFO 38328 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:41:22.876+09:00  INFO 38328 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:41:22.878+09:00  INFO 38328 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:41:22.918+09:00  INFO 38328 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:41:22.919+09:00  INFO 38328 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
-2025-05-22T09:41:23.025+09:00  INFO 38328 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:41:23.061+09:00  INFO 38328 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:41:23.082+09:00  INFO 38328 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:41:23.266+09:00  INFO 38328 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:41:23.285+09:00  INFO 38328 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:41:23.535+09:00  INFO 38328 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1231a1be
-2025-05-22T09:41:23.536+09:00  INFO 38328 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:41:23.559+09:00  WARN 38328 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:41:23.574+09:00  INFO 38328 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T11:53:56.504+09:00  INFO 57812 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T11:53:56.547+09:00  INFO 57812 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:53:56.992+09:00  INFO 57812 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T11:53:57.831+09:00  WARN 57812 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T11:53:58.326+09:00  INFO 57812 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T11:53:58.326+09:00  INFO 57812 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T11:53:58.327+09:00  INFO 57812 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-28T11:53:58.355+09:00  INFO 57812 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Started AccountRegisterControllerTest in 7.255 seconds (process running for 8.758)
+2025-05-28T11:53:59.409+09:00  INFO 57812 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:53:59.410+09:00  INFO 57812 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T11:53:59.413+09:00  INFO 57812 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T11:57:37.992+09:00  INFO 53844 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Starting AccountLoginControllerTest using Java 21.0.6 with PID 53844 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T11:57:37.993+09:00  INFO 53844 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T11:57:38.834+09:00  INFO 53844 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T11:57:38.913+09:00  INFO 53844 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2025-05-28T11:57:40.608+09:00  INFO 53844 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T11:57:40.741+09:00  INFO 53844 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T11:57:40.841+09:00  INFO 53844 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T11:57:41.173+09:00  INFO 53844 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T11:57:41.242+09:00  INFO 53844 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T11:57:41.620+09:00  INFO 53844 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d0dc104
+2025-05-28T11:57:41.626+09:00  INFO 53844 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T11:57:41.695+09:00  WARN 53844 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T11:57:41.730+09:00  INFO 53844 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -223,39 +173,30 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:41:24.175+09:00  INFO 38328 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:41:24.208+09:00  INFO 38328 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:41:24.426+09:00  INFO 38328 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:41:24.831+09:00  WARN 38328 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:41:25.094+09:00  INFO 38328 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:41:25.099+09:00  INFO 38328 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.265 seconds (process running for 3.685)
-2025-05-22T09:41:29.789+09:00  INFO 38328 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:41:29.790+09:00  INFO 38328 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:41:29.791+09:00  INFO 38328 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-05-22T09:42:18.055+09:00  INFO 38328 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:42:18.056+09:00  INFO 38328 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:42:18.064+09:00  INFO 38328 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:42:18.066+09:00  INFO 38328 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:42:18.069+09:00  INFO 38328 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:42:18.071+09:00  INFO 38328 --- [PersonProject] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-22T09:42:19.619+09:00  INFO 25252 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 25252 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
-2025-05-22T09:42:19.621+09:00  INFO 25252 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-05-22T09:42:20.031+09:00  INFO 25252 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-22T09:42:20.076+09:00  INFO 25252 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
-2025-05-22T09:42:20.366+09:00  INFO 25252 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-22T09:42:20.376+09:00  INFO 25252 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-22T09:42:20.376+09:00  INFO 25252 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-05-22T09:42:20.416+09:00  INFO 25252 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-22T09:42:20.418+09:00  INFO 25252 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
-2025-05-22T09:42:20.522+09:00  INFO 25252 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-22T09:42:20.559+09:00  INFO 25252 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-05-22T09:42:20.582+09:00  INFO 25252 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-22T09:42:20.767+09:00  INFO 25252 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-22T09:42:20.795+09:00  INFO 25252 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-22T09:42:20.945+09:00  INFO 25252 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1231a1be
-2025-05-22T09:42:20.946+09:00  INFO 25252 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-22T09:42:20.969+09:00  WARN 25252 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-22T09:42:20.981+09:00  INFO 25252 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-28T11:57:43.121+09:00  INFO 53844 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T11:57:43.170+09:00  INFO 53844 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:57:43.680+09:00  INFO 53844 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T11:57:44.570+09:00  WARN 53844 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T11:57:45.092+09:00  INFO 53844 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T11:57:45.092+09:00  INFO 53844 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T11:57:45.093+09:00  INFO 53844 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-28T11:57:45.121+09:00  INFO 53844 --- [PersonProject] [main] p.c.c.AccountLoginControllerTest         : Started AccountLoginControllerTest in 7.619 seconds (process running for 9.089)
+2025-05-28T11:57:46.176+09:00  INFO 53844 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T11:57:46.178+09:00  INFO 53844 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T11:57:46.181+09:00  INFO 53844 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T17:16:20.181+09:00  INFO 4916 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Starting AccountRegisterControllerTest using Java 21.0.6 with PID 4916 (started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T17:16:20.182+09:00  INFO 4916 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T17:16:20.941+09:00  INFO 4916 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T17:16:21.012+09:00  INFO 4916 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2025-05-28T17:16:22.640+09:00  INFO 4916 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T17:16:22.769+09:00  INFO 4916 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T17:16:22.860+09:00  INFO 4916 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T17:16:23.187+09:00  INFO 4916 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T17:16:23.251+09:00  INFO 4916 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T17:16:23.629+09:00  INFO 4916 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7548d0d
+2025-05-28T17:16:23.636+09:00  INFO 4916 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T17:16:23.701+09:00  WARN 4916 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T17:16:23.739+09:00  INFO 4916 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -263,18 +204,54 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-22T09:42:21.564+09:00  INFO 25252 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-22T09:42:21.595+09:00  INFO 25252 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:42:21.806+09:00  INFO 25252 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-05-22T09:42:22.180+09:00  WARN 25252 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-22T09:42:22.426+09:00  INFO 25252 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-22T09:42:22.433+09:00  INFO 25252 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.107 seconds (process running for 3.531)
-2025-05-22T09:42:26.460+09:00  INFO 25252 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-22T09:42:26.461+09:00  INFO 25252 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-22T09:42:26.462+09:00  INFO 25252 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-22T09:57:01.405+09:00  INFO 25252 --- [PersonProject] [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-05-22T09:57:01.408+09:00  INFO 25252 --- [PersonProject] [RMI TCP Connection(24)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-22T09:57:01.415+09:00  INFO 25252 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-22T09:57:01.418+09:00  INFO 25252 --- [PersonProject] [RMI TCP Connection(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-22T09:57:01.420+09:00  INFO 25252 --- [PersonProject] [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-22T09:57:01.423+09:00  INFO 25252 --- [PersonProject] [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T17:16:25.125+09:00  INFO 4916 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T17:16:25.165+09:00  INFO 4916 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T17:16:25.607+09:00  INFO 4916 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T17:16:26.482+09:00  WARN 4916 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T17:16:26.925+09:00  INFO 4916 --- [PersonProject] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-28T17:16:26.925+09:00  INFO 4916 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-28T17:16:26.926+09:00  INFO 4916 --- [PersonProject] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-28T17:16:26.954+09:00  INFO 4916 --- [PersonProject] [main] p.c.c.AccountRegisterControllerTest      : Started AccountRegisterControllerTest in 7.231 seconds (process running for 8.787)
+2025-05-28T17:16:28.045+09:00  INFO 4916 --- [PersonProject] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T17:16:28.048+09:00  INFO 4916 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T17:16:28.052+09:00  INFO 4916 --- [PersonProject] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-28T17:17:29.041+09:00  INFO 58044 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Starting PersonProjectApplication using Java 21.0.6 with PID 58044 (C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject\target\classes started by sheng in C:\Users\sheng\Documents\workspace-spring-tools-for-eclipse-4.30.0.RELEASE\PersonProject)
+2025-05-28T17:17:29.043+09:00  INFO 58044 --- [PersonProject] [main] pp.com.PersonProjectApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-28T17:17:29.461+09:00  INFO 58044 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-28T17:17:29.513+09:00  INFO 58044 --- [PersonProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2025-05-28T17:17:29.843+09:00  INFO 58044 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-28T17:17:29.855+09:00  INFO 58044 --- [PersonProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-28T17:17:29.856+09:00  INFO 58044 --- [PersonProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-28T17:17:29.902+09:00  INFO 58044 --- [PersonProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-28T17:17:29.902+09:00  INFO 58044 --- [PersonProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 832 ms
+2025-05-28T17:17:30.018+09:00  INFO 58044 --- [PersonProject] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-28T17:17:30.056+09:00  INFO 58044 --- [PersonProject] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-28T17:17:30.080+09:00  INFO 58044 --- [PersonProject] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-28T17:17:30.274+09:00  INFO 58044 --- [PersonProject] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-28T17:17:30.295+09:00  INFO 58044 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-28T17:17:30.460+09:00  INFO 58044 --- [PersonProject] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7db791df
+2025-05-28T17:17:30.461+09:00  INFO 58044 --- [PersonProject] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-28T17:17:30.484+09:00  WARN 58044 --- [PersonProject] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-28T17:17:30.499+09:00  INFO 58044 --- [PersonProject] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-28T17:17:31.088+09:00  INFO 58044 --- [PersonProject] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-28T17:17:31.121+09:00  INFO 58044 --- [PersonProject] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T17:17:31.339+09:00  INFO 58044 --- [PersonProject] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-28T17:17:31.717+09:00  WARN 58044 --- [PersonProject] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-28T17:17:31.982+09:00  INFO 58044 --- [PersonProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-28T17:17:31.989+09:00  INFO 58044 --- [PersonProject] [main] pp.com.PersonProjectApplication          : Started PersonProjectApplication in 3.25 seconds (process running for 3.688)
+2025-05-28T17:17:40.305+09:00  INFO 58044 --- [PersonProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-28T17:17:40.305+09:00  INFO 58044 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-28T17:17:40.306+09:00  INFO 58044 --- [PersonProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-28T17:53:14.217+09:00  INFO 58044 --- [PersonProject] [RMI TCP Connection(38)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-05-28T17:53:14.219+09:00  INFO 58044 --- [PersonProject] [RMI TCP Connection(38)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-28T17:53:14.224+09:00  INFO 58044 --- [PersonProject] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-28T17:53:14.228+09:00  INFO 58044 --- [PersonProject] [RMI TCP Connection(38)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-28T17:53:14.230+09:00  INFO 58044 --- [PersonProject] [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-28T17:53:14.232+09:00  INFO 58044 --- [PersonProject] [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
